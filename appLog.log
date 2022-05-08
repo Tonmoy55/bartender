@@ -1,0 +1,1216 @@
+2022-05-09 00:00:01,528 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order not accepted
+2022-05-09 00:00:21,560 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order not accepted
+2022-05-09 00:00:59,881 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-7] Order not accepted
+2022-05-09 00:01:02,953 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-6] Order not accepted
+2022-05-09 00:01:09,068 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-8] getCustomerAndServedDrinkList api invoked
+2022-05-09 00:01:20,607 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-9] Order not accepted
+2022-05-09 00:01:56,084 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-10] Order not accepted
+2022-05-09 00:03:09,167 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 1976 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 00:03:09,170 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 00:03:09,171 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 00:03:09,905 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 00:03:09,917 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 00:03:09,917 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 00:03:10,005 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 00:03:10,005 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 787 ms
+2022-05-09 00:03:10,303 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 00:03:10,313 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.535 seconds (JVM running for 2.2)
+2022-05-09 00:03:10,315 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 00:03:21,307 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 00:03:21,307 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-09 00:03:21,308 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-05-09 00:03:21,327 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] getCustomerAndServedDrinkList api invoked
+2022-05-09 00:03:39,423 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order accepted
+2022-05-09 00:03:50,097 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] getCustomerAndServedDrinkList api invoked
+2022-05-09 00:04:00,009 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:44)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 00:04:24,285 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:44)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 00:04:55,453 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:44)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 00:05:20,667 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:44)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 00:06:51,937 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:44)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 00:07:03,558 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 2604 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 00:07:03,560 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 00:07:03,561 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 00:07:04,293 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 00:07:04,303 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 00:07:04,303 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 00:07:04,391 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 00:07:04,392 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 784 ms
+2022-05-09 00:07:04,693 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 00:07:04,703 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.543 seconds (JVM running for 2.244)
+2022-05-09 00:07:04,706 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 00:07:42,454 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 00:07:42,454 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-09 00:07:42,455 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-05-09 00:07:42,483 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] getCustomerAndServedDrinkList api invoked
+2022-05-09 00:08:08,261 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 00:08:20,971 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:45)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 00:11:06,845 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:45)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 00:11:51,410 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 828 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 00:11:51,413 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 00:11:51,413 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 00:11:52,146 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 00:11:52,157 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 00:11:52,157 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 00:11:52,247 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 00:11:52,247 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 787 ms
+2022-05-09 00:11:52,553 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 00:11:52,572 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.567 seconds (JVM running for 2.26)
+2022-05-09 00:11:52,574 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 00:12:03,711 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 00:12:03,712 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-09 00:12:03,712 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2022-05-09 00:12:03,730 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] getCustomerAndServedDrinkList api invoked
+2022-05-09 00:12:28,233 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order accepted
+2022-05-09 00:12:51,100 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 00:13:00,258 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order accepted
+2022-05-09 00:21:55,265 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 14904 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 00:21:55,267 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 00:21:55,268 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 00:21:56,000 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 00:21:56,008 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 00:21:56,008 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 00:21:56,100 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 00:21:56,100 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 782 ms
+2022-05-09 00:21:56,437 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 00:21:56,447 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.56 seconds (JVM running for 2.226)
+2022-05-09 00:21:56,450 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 00:22:03,212 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 00:22:03,212 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-09 00:22:03,213 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2022-05-09 00:22:03,230 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] getCustomerAndServedDrinkList api invoked
+2022-05-09 00:22:50,272 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 00:23:23,798 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:44)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 00:28:55,135 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 12420 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 00:28:55,137 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 00:28:55,137 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 00:28:55,877 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 00:28:55,887 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 00:28:55,887 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 00:28:55,973 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 00:28:55,973 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 791 ms
+2022-05-09 00:28:56,265 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 00:28:56,275 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.544 seconds (JVM running for 2.306)
+2022-05-09 00:28:56,278 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 00:29:01,507 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 00:29:01,508 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-09 00:29:01,508 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2022-05-09 00:29:01,526 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] getCustomerAndServedDrinkList api invoked
+2022-05-09 00:29:07,958 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 00:29:21,377 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order not accepted
+2022-05-09 00:29:41,885 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order not accepted
+2022-05-09 00:30:47,715 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 15392 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 00:30:47,717 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 00:30:47,718 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 00:30:48,450 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 00:30:48,458 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 00:30:48,458 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 00:30:48,541 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 00:30:48,541 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 772 ms
+2022-05-09 00:30:48,843 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 00:30:48,853 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.508 seconds (JVM running for 2.249)
+2022-05-09 00:30:48,855 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 00:30:54,313 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 00:30:54,313 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-09 00:30:54,314 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-05-09 00:30:54,332 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] getCustomerAndServedDrinkList api invoked
+2022-05-09 00:31:11,663 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order accepted
+2022-05-09 00:34:06,598 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 16764 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 00:34:06,600 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 00:34:06,601 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 00:34:07,330 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 00:34:07,338 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 00:34:07,338 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 00:34:07,427 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 00:34:07,427 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 781 ms
+2022-05-09 00:34:07,748 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 00:34:07,758 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.552 seconds (JVM running for 2.26)
+2022-05-09 00:34:07,761 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 00:34:14,559 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 00:34:14,560 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-09 00:34:14,562 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-05-09 00:34:14,580 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] getCustomerAndServedDrinkList api invoked
+2022-05-09 00:34:39,356 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 00:36:06,479 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:44)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 00:37:05,841 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 12804 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 00:37:05,844 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 00:37:05,845 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 00:37:06,569 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 00:37:06,578 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 00:37:06,578 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 00:37:06,666 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 00:37:06,666 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 774 ms
+2022-05-09 00:37:06,970 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 00:37:06,980 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.528 seconds (JVM running for 2.187)
+2022-05-09 00:37:06,983 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 00:37:13,754 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 00:37:13,756 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-09 00:37:13,757 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-05-09 00:37:13,774 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] getCustomerAndServedDrinkList api invoked
+2022-05-09 00:37:21,305 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 00:37:41,839 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order not accepted
+2022-05-09 00:38:21,918 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order not accepted
+2022-05-09 00:52:04,762 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 15736 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 00:52:04,764 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 00:52:04,765 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 00:52:05,476 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 00:52:05,484 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 00:52:05,484 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 00:52:05,569 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 00:52:05,569 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 761 ms
+2022-05-09 00:52:05,874 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 00:52:05,883 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.525 seconds (JVM running for 2.293)
+2022-05-09 00:52:05,886 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 00:57:37,892 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 15724 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 00:57:37,894 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 00:57:37,895 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 00:57:38,626 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 00:57:38,636 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 00:57:38,636 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 00:57:38,725 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 00:57:38,725 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 780 ms
+2022-05-09 00:57:39,032 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 00:57:39,042 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.54 seconds (JVM running for 2.186)
+2022-05-09 00:57:39,045 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 00:57:48,173 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 00:57:48,173 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-09 00:57:48,174 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-05-09 00:57:48,193 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] getCustomerAndServedDrinkList api invoked
+2022-05-09 00:58:02,424 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 00:58:27,925 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order accepted
+2022-05-09 00:59:48,426 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 12476 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 00:59:48,428 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 00:59:48,429 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 00:59:49,172 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 00:59:49,181 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 00:59:49,181 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 00:59:49,267 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 00:59:49,267 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 795 ms
+2022-05-09 00:59:49,583 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 00:59:49,593 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.567 seconds (JVM running for 2.316)
+2022-05-09 00:59:49,596 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 00:59:55,629 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 00:59:55,629 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-09 00:59:55,630 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-05-09 01:00:07,066 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] Order accepted
+2022-05-09 01:00:42,955 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order not accepted
+2022-05-09 01:01:10,045 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order not accepted
+2022-05-09 01:01:44,995 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 11272 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 01:01:44,998 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 01:01:44,998 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 01:01:45,732 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 01:01:45,740 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 01:01:45,741 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 01:01:45,831 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 01:01:45,832 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 782 ms
+2022-05-09 01:01:46,138 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 01:01:46,149 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.541 seconds (JVM running for 2.264)
+2022-05-09 01:01:46,151 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 01:01:51,228 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 01:01:51,228 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-09 01:01:51,228 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2022-05-09 01:01:54,639 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] Order accepted
+2022-05-09 01:02:10,811 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:43)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 01:09:10,108 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 15980 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 01:09:10,110 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 01:09:10,111 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 01:09:10,838 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 01:09:10,846 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 01:09:10,847 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 01:09:10,932 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 01:09:10,933 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 772 ms
+2022-05-09 01:09:11,235 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 01:09:11,244 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.528 seconds (JVM running for 2.195)
+2022-05-09 01:09:11,247 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 01:09:18,742 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 01:09:18,742 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-09 01:09:18,743 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-05-09 01:09:18,761 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] getCustomerAndServedDrinkList api invoked
+2022-05-09 01:09:35,692 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 01:14:39,616 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 14660 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 01:14:39,618 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 01:14:39,623 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 01:14:40,376 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 01:14:40,384 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 01:14:40,384 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 01:14:40,471 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 01:14:40,471 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 790 ms
+2022-05-09 01:14:40,777 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 01:14:40,787 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.578 seconds (JVM running for 2.229)
+2022-05-09 01:14:40,789 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 01:14:48,887 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 01:14:48,888 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-09 01:14:48,888 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2022-05-09 01:14:48,906 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] getCustomerAndServedDrinkList api invoked
+2022-05-09 01:15:03,936 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order accepted
+2022-05-09 01:15:17,267 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order not accepted
+2022-05-09 01:15:34,764 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order not accepted
+2022-05-09 01:15:59,319 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 1612 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 01:15:59,321 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 01:15:59,322 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 01:16:00,053 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 01:16:00,061 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 01:16:00,062 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 01:16:00,148 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 01:16:00,148 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 765 ms
+2022-05-09 01:16:00,442 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 01:16:00,452 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.504 seconds (JVM running for 2.236)
+2022-05-09 01:16:00,454 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 01:16:08,434 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 01:16:08,434 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-09 01:16:08,435 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-05-09 01:16:08,453 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] getCustomerAndServedDrinkList api invoked
+2022-05-09 01:16:18,150 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order accepted
+2022-05-09 01:16:28,845 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:53)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 01:16:54,102 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:53)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 01:18:22,200 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 6108 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 01:18:22,202 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 01:18:22,203 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 01:18:22,963 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 01:18:22,971 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 01:18:22,971 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 01:18:23,059 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 01:18:23,060 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 811 ms
+2022-05-09 01:18:23,359 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 01:18:23,379 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.56 seconds (JVM running for 2.252)
+2022-05-09 01:18:23,382 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 01:18:31,050 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 01:18:31,051 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-09 01:18:31,051 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2022-05-09 01:18:31,069 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] getCustomerAndServedDrinkList api invoked
+2022-05-09 01:18:39,503 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order accepted
+2022-05-09 01:18:48,810 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order not accepted
+2022-05-09 01:19:14,183 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order accepted
+2022-05-09 01:19:23,025 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-6] Order accepted
+2022-05-09 01:19:37,051 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-7] Order accepted
+2022-05-09 01:20:15,961 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 11988 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 01:20:15,963 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 01:20:15,964 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 01:20:16,715 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 01:20:16,722 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 01:20:16,723 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 01:20:16,807 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 01:20:16,807 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 795 ms
+2022-05-09 01:20:17,097 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 01:20:17,107 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.515 seconds (JVM running for 2.277)
+2022-05-09 01:20:17,110 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 01:20:29,644 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 01:20:29,644 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-09 01:20:29,644 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2022-05-09 01:20:54,059 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] Order accepted
+2022-05-09 01:21:45,242 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order accepted
+2022-05-09 01:22:14,060 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 01:24:57,101 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-6] getCustomerAndServedDrinkList api invoked
+2022-05-09 01:26:05,959 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-8] Order accepted
+2022-05-09 01:27:46,382 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-9] Order accepted
+2022-05-09 01:28:02,922 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-10] Order accepted
+2022-05-09 01:28:08,531 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] getCustomerAndServedDrinkList api invoked
+2022-05-09 01:28:23,060 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] Order not accepted
+2022-05-09 01:28:43,040 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order accepted
+2022-05-09 01:28:53,847 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order not accepted
+2022-05-09 01:29:07,406 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order not accepted
+2022-05-09 01:29:11,081 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-7] Order not accepted
+2022-05-09 01:29:15,406 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-6] Order not accepted
+2022-05-09 01:29:17,034 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-8] Order not accepted
+2022-05-09 01:29:17,867 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-9] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:55)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 01:29:19,637 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-10] Order not accepted
+2022-05-09 01:29:20,442 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] Order not accepted
+2022-05-09 01:29:21,089 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order not accepted
+2022-05-09 01:29:21,849 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order not accepted
+2022-05-09 01:29:22,518 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order not accepted
+2022-05-09 01:29:23,155 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-7] Order not accepted
+2022-05-09 01:29:23,863 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:55)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at jdk.internal.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 01:29:25,930 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-9] Order not accepted
+2022-05-09 01:29:26,881 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] Order not accepted
+2022-05-09 01:29:27,661 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-10] Order not accepted
+2022-05-09 01:29:28,302 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] Order not accepted
+2022-05-09 01:29:28,913 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order not accepted
+2022-05-09 01:29:29,663 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order not accepted
+2022-05-09 01:29:30,287 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order not accepted
+2022-05-09 01:29:30,890 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-7] Order not accepted
+2022-05-09 01:29:31,643 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-6] Order not accepted
+2022-05-09 01:29:32,337 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-8] Order not accepted
+2022-05-09 01:29:33,099 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-9] Order not accepted
+2022-05-09 01:29:33,765 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] Order not accepted
+2022-05-09 01:29:34,467 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-10] Order not accepted
+2022-05-09 01:29:35,075 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] Order not accepted
+2022-05-09 01:29:41,620 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] getCustomerAndServedDrinkList api invoked
+2022-05-09 01:29:48,923 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order not accepted
+2022-05-09 01:29:56,059 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order accepted
+2022-05-09 01:30:00,950 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-7] Order accepted
+2022-05-09 01:30:03,071 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-6] Order accepted
+2022-05-09 01:30:04,387 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-8] Order accepted
+2022-05-09 01:30:05,167 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-9] Order accepted
+2022-05-09 01:30:05,491 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Task already scheduled or cancelled] with root cause
+java.lang.IllegalStateException: Task already scheduled or cancelled
+	at java.base/java.util.Timer.sched(Timer.java:402)
+	at java.base/java.util.Timer.scheduleAtFixedRate(Timer.java:329)
+	at com.tonmoy.bartender.service.BarTenderService.orderDrink(BarTenderService.java:55)
+	at com.tonmoy.bartender.controller.BarTenderController.orderDrink(BarTenderController.java:34)
+	at jdk.internal.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-05-09 01:30:06,062 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] Order accepted
+2022-05-09 01:30:06,796 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order accepted
+2022-05-09 01:30:07,452 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 01:30:08,150 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order accepted
+2022-05-09 01:30:08,825 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-7] Order accepted
+2022-05-09 01:30:09,476 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-6] Order accepted
+2022-05-09 01:30:10,176 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-8] Order accepted
+2022-05-09 01:30:16,053 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-9] getCustomerAndServedDrinkList api invoked
+2022-05-09 01:30:26,251 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] Order accepted
+2022-05-09 01:30:28,913 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-10] Order accepted
+2022-05-09 01:30:31,317 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] Order accepted
+2022-05-09 01:30:32,568 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order accepted
+2022-05-09 01:30:33,434 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 01:30:34,044 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order accepted
+2022-05-09 01:30:34,700 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-7] Order accepted
+2022-05-09 01:30:35,432 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-6] Order accepted
+2022-05-09 01:30:36,080 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-8] Order accepted
+2022-05-09 01:30:36,900 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-9] Order accepted
+2022-05-09 01:30:38,802 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] Order accepted
+2022-05-09 01:30:39,484 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-10] Order accepted
+2022-05-09 01:30:40,078 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] Order accepted
+2022-05-09 01:30:40,687 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] Order accepted
+2022-05-09 01:30:41,343 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 01:30:41,661 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order accepted
+2022-05-09 01:30:43,085 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-7] Order accepted
+2022-05-09 01:31:21,893 [INFO] com.tonmoy.bartender.BartenderApplication [main] Starting BartenderApplication using Java 16.0.2 on DESKTOP-0TCSHBL with PID 5068 (F:\DEVELOPMENT_Practice\bartender\target\classes started by TONMOY in F:\DEVELOPMENT_Practice\bartender)
+2022-05-09 01:31:21,895 [DEBUG] com.tonmoy.bartender.BartenderApplication [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 01:31:21,900 [INFO] com.tonmoy.bartender.BartenderApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-09 01:31:22,618 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-09 01:31:22,626 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-09 01:31:22,626 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-09 01:31:22,711 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-09 01:31:22,712 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 769 ms
+2022-05-09 01:31:23,012 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 01:31:23,022 [INFO] com.tonmoy.bartender.BartenderApplication [main] Started BartenderApplication in 1.512 seconds (JVM running for 2.167)
+2022-05-09 01:31:23,024 [INFO] com.tonmoy.bartender.BartenderApplication [main] just a test info log
+2022-05-09 01:31:49,584 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 01:31:49,584 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-09 01:31:49,584 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2022-05-09 01:31:49,602 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] getCustomerAndServedDrinkList api invoked
+2022-05-09 01:32:13,980 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-4] Order accepted
+2022-05-09 01:32:21,075 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-5] Order not accepted
+2022-05-09 01:32:33,839 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-3] getCustomerAndServedDrinkList api invoked
+2022-05-09 01:32:49,153 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-7] Order accepted
+2022-05-09 01:32:54,688 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-8] getCustomerAndServedDrinkList api invoked
+2022-05-09 01:33:11,873 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-6] Order accepted
+2022-05-09 01:33:18,786 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-9] Order accepted
+2022-05-09 01:33:27,222 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-10] Order accepted
+2022-05-09 01:33:30,330 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-1] Order accepted
+2022-05-09 01:33:35,631 [INFO] com.tonmoy.bartender.controller.BarTenderController [http-nio-8080-exec-2] Order accepted
